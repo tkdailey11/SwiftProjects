@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,8 +50,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height in m" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49o-8K-Sd2">
-                                        <rect key="frame" x="139" y="46" width="97" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height in inches" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49o-8K-Sd2">
+                                        <rect key="frame" x="139" y="46" width="122" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -58,8 +59,8 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="e94-VK-Sfn"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in kg" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dro-lv-nDR">
-                                        <rect key="frame" x="139" y="107" width="97" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in lbs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dro-lv-nDR">
+                                        <rect key="frame" x="139" y="107" width="122" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -68,7 +69,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbZ-eM-WTc">
-                                        <rect key="frame" x="263" y="46" width="42" height="91"/>
+                                        <rect key="frame" x="276" y="46" width="42" height="91"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -79,6 +80,7 @@
                                     <constraint firstItem="sjM-Bj-jF0" firstAttribute="top" secondItem="Eue-1a-xTQ" secondAttribute="bottom" constant="40" id="5b2-Jk-Ihy"/>
                                     <constraint firstItem="cbZ-eM-WTc" firstAttribute="bottom" secondItem="dro-lv-nDR" secondAttribute="bottom" id="EX8-Zx-9xM"/>
                                     <constraint firstItem="dro-lv-nDR" firstAttribute="top" secondItem="49o-8K-Sd2" secondAttribute="bottom" constant="31" id="J9J-U3-HQK"/>
+                                    <constraint firstItem="dro-lv-nDR" firstAttribute="width" secondItem="49o-8K-Sd2" secondAttribute="width" id="RvC-nh-PGk"/>
                                     <constraint firstItem="Eue-1a-xTQ" firstAttribute="leading" secondItem="Hqg-uT-OBp" secondAttribute="leading" constant="51" id="XhA-c0-81Y"/>
                                     <constraint firstItem="49o-8K-Sd2" firstAttribute="top" secondItem="Hqg-uT-OBp" secondAttribute="top" constant="46" id="ZN6-kB-hyg"/>
                                     <constraint firstItem="Eue-1a-xTQ" firstAttribute="top" secondItem="Hqg-uT-OBp" secondAttribute="top" constant="51" id="Zzx-vv-rpi"/>
@@ -87,9 +89,16 @@
                                     <constraint firstItem="cbZ-eM-WTc" firstAttribute="top" secondItem="49o-8K-Sd2" secondAttribute="top" id="bep-78-mIO"/>
                                     <constraint firstItem="dro-lv-nDR" firstAttribute="leading" secondItem="sjM-Bj-jF0" secondAttribute="trailing" constant="29" id="g0b-YE-rNY"/>
                                     <constraint firstAttribute="width" secondItem="Hqg-uT-OBp" secondAttribute="height" multiplier="15:23" id="m9E-19-8aU"/>
-                                    <constraint firstItem="cbZ-eM-WTc" firstAttribute="leading" secondItem="49o-8K-Sd2" secondAttribute="trailing" constant="27" id="tmj-pf-4CU"/>
+                                    <constraint firstItem="cbZ-eM-WTc" firstAttribute="leading" secondItem="49o-8K-Sd2" secondAttribute="trailing" constant="15" id="tmj-pf-4CU"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©2016 TDSD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-fv-0QE">
+                                <rect key="frame" x="282" y="177" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -106,6 +115,12 @@
                                 <exclude reference="KUJ-04-n7Q"/>
                                 <exclude reference="Mdi-nw-kyV"/>
                                 <exclude reference="Hqg-uT-OBp"/>
+                                <exclude reference="cDd-fv-0QE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="cDd-fv-0QE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
