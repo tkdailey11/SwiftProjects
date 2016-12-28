@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,44 +22,52 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="KUJ-04-n7Q">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="92.666666666666671"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KUJ-04-n7Q" secondAttribute="height" multiplier="125:28" id="vjp-Gk-qML"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFr-Ge-6Id">
-                                <rect key="frame" x="0.0" y="181" width="768" height="844"/>
+                                <rect key="frame" x="0.0" y="238" width="1024" height="1129"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="scale" translatesAutoresizingMaskIntoConstraints="NO" id="ud2-Es-FDC">
-                                        <rect key="frame" x="63" y="338" width="198" height="169"/>
+                                        <rect key="frame" x="63" y="452" width="265" height="226"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ud2-Es-FDC" secondAttribute="height" multiplier="219:187" id="mPr-sJ-WVC"/>
                                         </constraints>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tape" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-fZ-An6">
-                                        <rect key="frame" x="63" y="115" width="198" height="173"/>
+                                        <rect key="frame" x="63" y="171" width="265" height="231"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Qpo-fZ-An6" secondAttribute="height" multiplier="73:64" id="evX-oV-MGV"/>
                                         </constraints>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-OO-sCj">
-                                        <rect key="frame" x="63" y="557" width="198" height="201"/>
+                                        <rect key="frame" x="63" y="728" width="265" height="269"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ej4-OO-sCj" secondAttribute="height" multiplier="77:78" id="Oij-LU-ay1"/>
                                         </constraints>
                                     </imageView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5x-KT-dE8">
-                                        <rect key="frame" x="394" y="314" width="341" height="216"/>
+                                        <rect key="frame" x="461" y="457" width="530" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="vjc-vg-Jyv"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="dud-Ki-cNC"/>
+                                        </connections>
                                     </pickerView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpG-Hw-832">
-                                        <rect key="frame" x="394" y="93" width="341" height="216"/>
+                                        <rect key="frame" x="461" y="178" width="530" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="dIZ-Pl-WW2"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="mJa-4Y-UZ4"/>
+                                        </connections>
                                     </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3my-KK-dXk">
-                                        <rect key="frame" x="533" y="640" width="64" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3my-KK-dXk" userLabel="Bmi Label">
+                                        <rect key="frame" x="694" y="845" width="64" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -115,16 +123,16 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqg-uT-OBp">
-                                <rect key="frame" x="4" y="92.666666666666686" width="419.33333333333331" height="643.33333333333326"/>
+                                <rect key="frame" x="0.0" y="72" width="324" height="496"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eue-1a-xTQ">
-                                        <rect key="frame" x="51" y="50.999999999999986" width="56" height="21"/>
+                                        <rect key="frame" x="51" y="51" width="56" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjM-Bj-jF0">
-                                        <rect key="frame" x="51" y="111.99999999999999" width="59" height="21.000000000000014"/>
+                                        <rect key="frame" x="51" y="112" width="59" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -148,7 +156,7 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbZ-eM-WTc">
-                                        <rect key="frame" x="279" y="45.999999999999986" width="35" height="91.000000000000014"/>
+                                        <rect key="frame" x="279" y="46" width="35" height="91"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -242,8 +250,11 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="bmiLabel" destination="cbZ-eM-WTc" id="g8J-4P-Pv1"/>
+                        <outlet property="bmiLabel" destination="cbZ-eM-WTc" id="wTo-1V-u15"/>
+                        <outlet property="bmiLabeliPad" destination="3my-KK-dXk" id="1wX-8S-OAQ"/>
+                        <outlet property="heightPickerView" destination="TpG-Hw-832" id="0bA-hC-iFX"/>
                         <outlet property="heightTextField" destination="49o-8K-Sd2" id="b7T-Nz-PZb"/>
+                        <outlet property="weightPickerView" destination="k5x-KT-dE8" id="7Op-6S-fvh"/>
                         <outlet property="weightTextField" destination="dro-lv-nDR" id="KHa-MA-M2w"/>
                     </connections>
                 </viewController>
@@ -253,7 +264,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Banner" width="360" height="85"/>
+        <image name="Banner" width="676" height="169"/>
         <image name="heart" width="213" height="200"/>
         <image name="scale" width="213" height="188"/>
         <image name="tape" width="213" height="189"/>
