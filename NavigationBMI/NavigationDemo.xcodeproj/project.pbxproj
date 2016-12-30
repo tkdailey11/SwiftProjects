@@ -14,8 +14,9 @@
 		824C591F1E1716D600AE8FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824C591D1E1716D600AE8FDC /* LaunchScreen.storyboard */; };
 		824C592A1E1716D600AE8FDC /* NavigationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C59291E1716D600AE8FDC /* NavigationDemoTests.swift */; };
 		824C59351E1716D600AE8FDC /* NavigationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C59341E1716D600AE8FDC /* NavigationDemoUITests.swift */; };
-		824C59431E171C4000AE8FDC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C59421E171C4000AE8FDC /* SecondViewController.swift */; };
-		824C59451E171C7D00AE8FDC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C59441E171C7D00AE8FDC /* DetailViewController.swift */; };
+		824C59471E17279E00AE8FDC /* MetricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C59461E17279E00AE8FDC /* MetricViewController.swift */; };
+		824C59491E1727CD00AE8FDC /* StandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C59481E1727CD00AE8FDC /* StandardViewController.swift */; };
+		824C594B1E1727F500AE8FDC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C594A1E1727F500AE8FDC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,9 @@
 		824C59301E1716D600AE8FDC /* NavigationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		824C59341E1716D600AE8FDC /* NavigationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDemoUITests.swift; sourceTree = "<group>"; };
 		824C59361E1716D600AE8FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		824C59421E171C4000AE8FDC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		824C59441E171C7D00AE8FDC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		824C59461E17279E00AE8FDC /* MetricViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricViewController.swift; sourceTree = "<group>"; };
+		824C59481E1727CD00AE8FDC /* StandardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandardViewController.swift; path = ../StandardViewController.swift; sourceTree = "<group>"; };
+		824C594A1E1727F500AE8FDC /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,9 @@
 			children = (
 				824C59141E1716D600AE8FDC /* AppDelegate.swift */,
 				824C59161E1716D600AE8FDC /* ViewController.swift */,
-				824C59441E171C7D00AE8FDC /* DetailViewController.swift */,
-				824C59421E171C4000AE8FDC /* SecondViewController.swift */,
+				824C59461E17279E00AE8FDC /* MetricViewController.swift */,
+				824C59481E1727CD00AE8FDC /* StandardViewController.swift */,
+				824C594A1E1727F500AE8FDC /* ResultViewController.swift */,
 				824C59181E1716D600AE8FDC /* Main.storyboard */,
 				824C591B1E1716D600AE8FDC /* Assets.xcassets */,
 				824C591D1E1716D600AE8FDC /* LaunchScreen.storyboard */,
@@ -268,10 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				824C59431E171C4000AE8FDC /* SecondViewController.swift in Sources */,
+				824C594B1E1727F500AE8FDC /* ResultViewController.swift in Sources */,
+				824C59471E17279E00AE8FDC /* MetricViewController.swift in Sources */,
 				824C59171E1716D600AE8FDC /* ViewController.swift in Sources */,
 				824C59151E1716D600AE8FDC /* AppDelegate.swift in Sources */,
-				824C59451E171C7D00AE8FDC /* DetailViewController.swift in Sources */,
+				824C59491E1727CD00AE8FDC /* StandardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +524,7 @@
 				824C593B1E1716D600AE8FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		824C593C1E1716D600AE8FDC /* Build configuration list for PBXNativeTarget "NavigationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				824C593E1E1716D600AE8FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		824C593F1E1716D600AE8FDC /* Build configuration list for PBXNativeTarget "NavigationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				824C59411E1716D600AE8FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

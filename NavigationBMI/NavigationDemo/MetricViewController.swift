@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  MetricViewController.swift
 //  NavigationDemo
 //
 //  Created by Tyler Dailey on 12/30/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class MetricViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ResultViewController.swift
 //  NavigationDemo
 //
 //  Created by Tyler Dailey on 12/30/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
