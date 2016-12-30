@@ -10,11 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
   
-  class func doDiv2(u: Int) -> Double {
-    return Double(u) * 0.5
-  }
-  
-  
   //Weight and height are called "Stored Properties"
   var weight : Double?
   var height : Double?
@@ -31,8 +26,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
     }
   }
   
-  let listOfHeights = Array(100...200).map(ViewController.doDiv2)
-  let listOfWeights : Array<Double> = Array(200...500).map(ViewController.doDiv2)
+  let listOfHeights = Array(100...200).map(){ Double($0) * 0.5 }
+  let listOfWeights : Array<Double> = Array(200...500).map(){ Double($0) * 0.5 }
   
   @IBOutlet weak var weightPickerView: UIPickerView!
   @IBOutlet weak var heightPickerView: UIPickerView!
@@ -66,24 +61,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
   
   func textFieldDidEndEditing(_ textField: UITextField) {
     
-    guard let txt : String = textField.text else {
+    guard let txt = textField.text else {
       return
     }
     
-    
-    //-> Double means "Returns a Double"
-    func convert(numString : String) -> Double? {
-      let result : Double? = NumberFormatter().number(from: numString)?.doubleValue
-      return result
-    }
+    let val = NumberFormatter().number(from: txt)?.doubleValue
     
     switch (textField) {
       
     case heightTextField:
-      self.height = convert(numString: txt)
+      self.height = val
       
     case weightTextField:
-      self.weight = convert(numString: txt)
+      self.weight = val
       
     default:
       print("ERROR")
